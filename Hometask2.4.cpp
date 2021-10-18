@@ -3,10 +3,8 @@ using namespace std;
 
 int main() 
 {
-	int a, b, c;
+	int a;
 	cin >> a;
-	b = a % 1000;
-	c = b / 10;
-	cout << c << endl;
+	cout << a % 1000 / 10 << endl;
 	return 0;
 }
