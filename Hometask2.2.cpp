@@ -3,15 +3,24 @@ using namespace std;
 
 int main()
 {
-	int a, b, c;
+	int a, b, c, min, max;
 
 	cin >> a >> b;
-	for (b; a <= b; b--)
+	min = a;
+	max = b;
+	
+	if (a > b)
 	{
-		c = b % 2;
+		max = a;
+		min = b;
+	}
+	
+	for (max; min <= max; max--)
+	{
+		c = max % 2;
 		if (c != 0)
 		{
-			cout << b << ", ";
+			cout << max << ", ";
 		}
 	}
 
