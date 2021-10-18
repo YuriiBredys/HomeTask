@@ -3,12 +3,11 @@ using namespace std;
 
 int main() 
 {
-	int a, b, n;
+	int a, n;
 	cin >> a >> n;
-	for (a ; a > 0; a /= 10) 
+	for (int i = n; i > 0; i--) 
 	{
-		b = a % 10;
-		cout << b << ", ";
+		cout << a % int(pow(10, i)) / int(pow(10, i - 1)) << ", ";
 	}
 
 }
