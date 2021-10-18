@@ -7,9 +7,9 @@ int main()
 	int n;
 	cin >> n;
 	sum = 0;
-	for (float i = 1; i <= n; i++) 
+	for (int i = 1; i <= n; i++) 
 	{
-		y = 1 / i * (i + 1);
+		y = 1.0 / (i * (i + 1));
 		sum += y;
 	}
 	cout << sum << endl;
