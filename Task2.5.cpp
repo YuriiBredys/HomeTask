@@ -9,5 +9,6 @@ int main()
 	{
 		cout << a % int(pow(10, i)) / int(pow(10, i - 1)) << ", ";
 	}
-
+	
+	return 0;
 }
