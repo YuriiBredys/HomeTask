@@ -8,6 +8,7 @@ int main()
 	cin >> a >> b;
 	min = a;
 	max = b;
+	
 	if (a > b) 
 	{
 		max = a;
